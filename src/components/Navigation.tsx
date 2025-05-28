@@ -3,14 +3,14 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Calendar, Chart, Users, Heart } from "lucide-react";
+import { Calendar, BarChart3, Users, Heart } from "lucide-react";
 
 export function Navigation() {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Dashboard", path: "/dashboard", icon: <Chart className="h-4 w-4" /> },
+    { name: "Dashboard", path: "/dashboard", icon: <BarChart3 className="h-4 w-4" /> },
     { name: "Workouts", path: "/workouts", icon: <Calendar className="h-4 w-4" /> },
     { name: "Nutrition", path: "/nutrition", icon: <Heart className="h-4 w-4" /> },
     { name: "Goals", path: "/goals", icon: <Users className="h-4 w-4" /> },

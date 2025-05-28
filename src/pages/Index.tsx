@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Calendar, Chart } from "lucide-react";
+import { Users, Calendar, BarChart3 } from "lucide-react";
 import { AuthModal } from "@/components/AuthModal";
 import { useNavigate } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const Index = () => {
 
   const features = [
     {
-      icon: <Chart className="h-8 w-8 text-blue-600" />,
+      icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
       title: "Progress Tracking",
       description: "Visualize your fitness journey with detailed charts and analytics"
     },
